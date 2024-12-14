@@ -48,5 +48,5 @@ This project was developed as part of the graduation project for the **Digital E
 ## LIVE DEMO
 
 The project is live on GitHub Pages.  
-You can view the live website [here](https://ZyadRaft.github.io/DEPI-Project/index.html).
+You can view the live website [here](https://zyadraft.github.io/DEPI-Project/).
 
