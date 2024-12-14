@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore our delicious menu and learn more about our restaurant's unique dining experience.">
+    <link rel="icon" href="assets/img/restaurant_logo.png" type="image/x-icon">
+    <title>Lorem Restaurant</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+</head>
+<body class="homepage-body OpenSans-font" id="go-top">
+  <div class="fullscreen-overlay" id="opening-animation">
+    <svg id="logo" viewBox="0 0 500 100">
+      <!-- L -->
+      <path d="M10,10 L10,90 L50,90" />
+      <!-- O -->
+      <path d="M70,50 C70,25 90,10 110,10 C130,10 150,25 150,50 C150,75 130,90 110,90 C90,90 70,75 70,50 Z" />
+      <!-- R -->
+      <path d="M170,10 L170,90 M170,10 C195,10 220,25 220,45 C220,65 195,80 170,80 M220,80 L240,90" />
+      <!-- E -->
+      <path d="M260,10 L260,90 L300,90 M260,50 L290,50 M260,10 L300,10" />
+      <!-- M -->
+      <path d="M320,90 L320,10 L350,50 L380,10 L380,90" />
+      <!-- Decorative flourish -->
+      <path d="M400,80 Q410,70 420,80 T440,80" />
+    </svg>
+  </div>
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top Raleway-font">
+        <img src="assets/img/restaurant_logo.png" alt="" class="logo" />
+        <div class="toggle-nav-mob">
+          <i class="bi bi-list"></i>
+        </div>
+        <div class="container-fluid nav-mobile">
+          <div class="offset-md-5 col-md-7 col-12">
+            <ul class="navbar-nav justify-content-around">
+              <li class="nav-item">
+                <a class="nav-link" href="#go-top">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                    MENU <span class="bi-caret-down-fill"></span>
+                  </a>
+                  <ul class="dropdown-menu justify-content-center">
+                    <li>
+                      <a class="dropdown-item" href="menu-products.html">All Products</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="menu-categories.html">Categories</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <button id="theme-toggle" class="d-block"></button>
+        </div>
+      </nav>
+    </header>
+
+    <div id="scene">
+      <div data-depth="0.08" class="parallax-img-1">
+        <img src="assets/img/tomato.png" alt="" />
+      </div>
+      <div data-depth="0.1" class="parallax-img-2">
+        <img src="assets/img/kebab.png" alt="" />
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row home-row pb-3 pb-md-5">
+        <div class="col-12 col-lg-6">
+          <h1 class="main-section-header d-block text-center Raleway-font">
+            Welcome to Lorem Restaurant.
+          </h1>
+          <p class="main-section-desc lead">
+            Indulge in an unforgettable dining experience where elegance meets culinary artistry.
+            Our sophisticated ambiance, paired with a meticulously curated menu, invites you to
+            savor exquisite flavors and beautifully presented dishes. Each meal is crafted with the
+            finest ingredients, ensuring a memorable journey for your palate. Join us for an evening
+            of refinement and delight, where every detail is designed to elevate your dining
+            experience.
+          </p>
+          <button class="check-menu mx-auto d-block my-4">
+            <a href="menu-products.html">Check Our Menu</a>
+          </button>
+        </div>
+        <div class="col-12 col-lg-6 banner-img-wp d-flex align-items-center">
+          <img src="assets/img/koshary.jpg" alt="" class="banner-img d-block my-auto" />
+        </div>
+      </div>
+
+      <div class="row">
+        <h2 class="d-block text-center Raleway-font fw-bold my-5">Testimonials</h2>
+        <div class="col-12 col-lg-6 col-xxl-4 testimonial-container">
+          <div class="testimonial-card m-auto">
+            <div class="testimonial-up p-1">
+              <div>
+                <img src="assets/img/testimonial2.jpg" alt="" />
+              </div>
+              <div class="my-auto">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+            <div class="testimonial-paragraph">
+              <h3>John Doe</h3>
+              <p>
+                The food was good, but I felt the service could be more attentive. Overall, a
+                pleasant experience, but there's room for improvement.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xxl-4 testimonial-container">
+          <div class="testimonial-card m-auto">
+            <div class="testimonial-up">
+              <div>
+                <img src="assets/img/testimonial3.jpg" alt="" />
+              </div>
+              <div class="my-auto">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+            <div class="testimonial-paragraph">
+              <h3>David Richards</h3>
+              <p>
+                I really enjoyed my meal! The flavors were vibrant, and the atmosphere was cozy.
+                Just a bit more variety on the menu would make it perfect.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xxl-4 testimonial-container">
+          <div class="testimonial-card m-auto">
+            <div class="testimonial-up">
+              <div>
+                <img src="assets/img/testimonall.avif" alt="" />
+              </div>
+              <div class="my-auto">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+            <div class="testimonial-paragraph">
+              <h3>Sarah Wilson</h3>
+              <p>
+                Enjoyed the meal overall, but a couple of dishes were underwhelming. With a bit more
+                consistency, it could be fantastic!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xxl-4 testimonial-container">
+          <div class="testimonial-card m-auto">
+            <div class="testimonial-up">
+              <div>
+                <img src="assets/img/testimonialll.avif" alt="" />
+              </div>
+              <div class="my-auto">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+            <div class="testimonial-paragraph">
+              <h3>Daniel Brown</h3>
+              <p>
+                An unforgettable dining experience! Everything from the food to the service was
+                perfect. I can't recommend this place highly enough!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xxl-4 testimonial-container">
+          <div class="testimonial-card m-auto">
+            <div class="testimonial-up">
+              <div>
+                <img src="assets/img/testimonial6.jpg" alt="" />
+              </div>
+              <div class="my-auto">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+            </div>
+            <div class="testimonial-paragraph">
+              <h3>Emily Taylor</h3>
+              <p>
+                An exceptional meal! The attention to detail in each dish was impressive, and the
+                staff made us feel right at home.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xxl-4 testimonial-container">
+          <div class="testimonial-card m-auto">
+            <div class="testimonial-up">
+              <div>
+                <img src="assets/img/testimonial7.jpg" alt="" />
+              </div>
+              <div class="my-auto">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+            <div class="testimonial-paragraph">
+              <h3>James Smith</h3>
+              <p>
+                Solid experience with delicious food. The staff was friendly, and the setting was
+                cozy. I’d definitely come back for another meal!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container-fluid">
+        <div class="row p-3 p-xl-4">
+          <div class="social-links">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-twitter-x"></i>
+            <i class="bi bi-youtube"></i>
+          </div>
+        </div>
+        <div class="row px-3">
+          <div class="col-12 col-lg-6 col-xl-4">
+            <h3 class="Raleway-font">Subscribe to our Newsletter</h3>
+            <form class="footer-form">
+              <div class="row">
+                <div class="col-6 footer_first py-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter First Name"
+                    name="first-name"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="col-6 footer_last py-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Last Name"
+                    name="last-name"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="col-12 footer_email my-3 py-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Email"
+                    name="email"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                  <button role="button" class="news_btn">Subscribe</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="offset-2 col-4 offset-lg-1 col-lg-2 offset-xl-1 col-xl-3 footer-sec">
+            <h3 class="Raleway-font pb-3">Links</h3>
+            <ul>
+              <li><a href="#go-top">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="menu-products.html">Menu</a></li>
+              <li><a href="menu-categories.html">Categories</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="offset-1 col-5 offset-lg-1 col-lg-2 offset-xl-1 col-xl-3 footer-sec">
+            <h3 class="Raleway-font pb-3">Company</h3>
+            <ul>
+              <li><a href="">Terms of Service</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container-fluid text-center py-3 py-lg-5">Copyright @2024 Lorem Restaurant</div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+      /* Parallax Animation */
+      var scene = document.getElementById('scene');
+      var parallaxInstance = new Parallax(scene);
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            parallaxInstance.enable();
+          } else {
+            parallaxInstance.disable();
+          }
+        });
+      });
+      observer.observe(scene);
+
+      /* Scrolling Animation */
+      gsap.registerPlugin(ScrollTrigger);
+      const cards = document.querySelectorAll('.testimonial-container');
+      cards.forEach(card => {
+        gsap.fromTo(
+          card,
+          { opacity: 0, y: 50 },
+          {
+            opacity: 1,
+            y: 0,
+            scrollTrigger: {
+              trigger: card,
+              start: 'top 90%',
+              toggleActions: 'play none none none',
+            },
+          }
+        );
+      });
+
+      /* Opening Animation */
+       document.addEventListener('DOMContentLoaded', (event) => {
+        const paths = document.querySelectorAll('#logo path');
+        const overlay = document.getElementById('opening-animation');
+        
+        paths.forEach((path, index) => {
+          const length = path.getTotalLength();
+          path.style.strokeDasharray = length;
+          path.style.strokeDashoffset = length;
+          
+          path.style.animation = `drawPath 2s ease forwards ${index * 0.3}s`;
+        });
+
+        // Hide overlay after animation
+        setTimeout(() => {
+          overlay.style.opacity = '0';
+          overlay.style.transition = 'opacity 1s ease';
+          setTimeout(() => {
+            overlay.style.display = 'none';
+          }, 1000);
+        }, 3500); // Adjusted timing for "Lorem"
+      }); 
+
+     
+
+ 
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Get in touch with us for inquiries, feedback, or suggestions. We are here to assist you and enhance your dining experience.">
+    <link rel="icon" href="assets/img/restaurant_logo.png" type="image/x-icon">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <style>
+      footer {
+        left: 0 !important;
+        width: 100vw;
+      }
+      .contact-body {
+        margin: 0;
+        overflow-x: hidden !important;
+        background-color: var(--first_color);
+        color: var(--fourth_color);
+        padding-top: 107px;
+        background-image: url(assets/img/menu-bg.png);
+      }
+
+      .contact-section {
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        position: relative;
+        font-family: 'RalewayVariable';
+        box-shadow: var(--second_color) 0px 5px 15px;
+        background-image: url(assets/img/ContactHero.jpg) !important;
+      }
+
+      .contact-overlay {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .contact-overlay h1 {
+        color: white;
+        font-weight: bold;
+      }
+      .contact-form {
+        background-color: var(--first_color);
+        padding: 30px;
+        box-shadow: var(--second_color) 0px 5px 15px;
+        background-image: linear-gradient(var(--first_color), var(--fourth_color) 200%);
+        border-radius: 35px;
+        font-family: 'RalewayVariable';
+      }
+
+      .contact-info {
+        background-color: var(--first_color);
+        padding: 30px;
+        box-shadow: var(--second_color) 0px 5px 15px;
+        background-image: linear-gradient(var(--first_color), var(--fourth_color) 200%);
+        border-radius: 35px;
+        font-family: 'RalewayVariable';
+      }
+
+      .map-container {
+        height: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        font-family: 'RalewayVariable';
+      }
+
+      .text-center {
+        padding: 100px 0;
+      }
+
+      .form-control {
+        border-radius: 20px;
+      }
+
+      .btn-primary {
+        background: var(--first_color);
+        color: var(--fourth_color);
+      }
+
+      .btn-primary:hover {
+        background: var(--third_color);
+      }
+
+      .h1 {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      /* تنسيقات نافذة التنبيه */
+      #customAlert {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: linear-gradient(#1c7b98, #6695a8);
+        background-color: var(--first_color);
+        color: var(--fourth_color);
+        padding: 20px;
+        box-shadow: var(--second_color) 0px 5px 15px;
+        border-radius: 8px;
+        z-index: 1000;
+        text-align: center;
+      }
+
+      #customAlert p {
+        margin: 0;
+        padding-bottom: 10px;
+        color: white;
+      }
+
+      #closeAlert {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      #closeAlert:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body class="contact-body" id="go-top">
+    <div class="fullscreen-overlay" id="opening-animation">
+      <svg id="logo" viewBox="0 0 500 100">
+        <!-- L -->
+        <path d="M10,10 L10,90 L50,90" />
+        <!-- O -->
+        <path d="M70,50 C70,25 90,10 110,10 C130,10 150,25 150,50 C150,75 130,90 110,90 C90,90 70,75 70,50 Z" />
+        <!-- R -->
+        <path d="M170,10 L170,90 M170,10 C195,10 220,25 220,45 C220,65 195,80 170,80 M220,80 L240,90" />
+        <!-- E -->
+        <path d="M260,10 L260,90 L300,90 M260,50 L290,50 M260,10 L300,10" />
+        <!-- M -->
+        <path d="M320,90 L320,10 L350,50 L380,10 L380,90" />
+        <!-- Decorative flourish -->
+        <path d="M400,80 Q410,70 420,80 T440,80" />
+      </svg>
+    </div>
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top">
+        <img src="assets/img/restaurant_logo.png" alt="" width="120px" class="logo" />
+        <div class="toggle-nav-mob">
+          <i class="bi bi-list"></i>
+        </div>
+        <div class="container-fluid nav-mobile">
+          <div class="offset-md-5 col-md-7 col-12">
+            <ul class="navbar-nav justify-content-around">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                    MENU <span class="bi-caret-down-fill"></span>
+                  </a>
+                  <ul class="dropdown-menu justify-content-center">
+                    <li>
+                      <a class="dropdown-item" href="menu-products.html">All Products</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="menu-categories.html">Categories</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#go-top">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <button id="theme-toggle" class="d-block"></button>
+        </div>
+      </nav>
+    </header>
+    <header class="contact-section">
+      <div class="contact-overlay">
+        <h1 class="h1-header display-4 Raleway-font">Contact Us</h1>
+      </div>
+
+    </header>
+
+    <main class="container my-5">
+      <div class="h1 Raleway-font fw-bold">Let’s Start a Conversation</div>
+      <section class="row align-items-center mb-5">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="contact-form">
+              <h3 class="mb-4">Send us a message</h3>
+              <form id="contactForm">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input type="tel" class="form-control" id="phone" placeholder="Your Phone" />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-info">
+              <h3 class="mb-4">Our Information</h3>
+              <p><i class="bi bi-geo-alt-fill me-2"></i> Alexandria, Egypt</p>
+              <p><i class="bi bi-telephone-fill me-2"></i> +1 234 567 890</p>
+              <p><i class="bi bi-envelope-fill me-2"></i>LoremRestaurant@gmail.com</p>
+              <p><i class="bi bi-clock-fill me-2"></i> Mon-Sat: 11:00 AM - 11:00 PM</p>
+              <div class="map-container mt-4">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218360.43102643781!2d29.79007492881715!3d31.22400577142204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c49126710fd3%3A0xb4e0cda629ee6bb9!2sAlexandria%2C%20Alexandria%20Governorate!5e0!3m2!1sen!2seg!4v1727996789407!5m2!1sen!2seg"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="customAlert">
+        <p>Thank you for your message. We will get back to you soon!</p>
+
+        <button id="closeAlert">Close</button>
+      </div>
+
+      <div id="overlay"></div>
+    </main>
+    <footer>
+      <div class="container-fluid">
+        <div class="row p-3 p-xl-4">
+          <div class="social-links">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-twitter-x"></i>
+            <i class="bi bi-youtube"></i>
+          </div>
+        </div>
+        <div class="row px-3">
+          <div class="col-12 col-lg-6 col-xl-4">
+            <h3 class="Raleway-font">Subscribe to our Newsletter</h3>
+            <form class="footer-form">
+              <div class="row">
+                <div class="col-6 footer_first py-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter First Name"
+                    name="first-name"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="col-6 footer_last py-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Last Name"
+                    name="last-name"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="col-12 footer_email my-3 py-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Email"
+                    name="email"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                  <button role="button" class="news_btn">Subscribe</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="offset-2 col-4 offset-lg-1 col-lg-2 offset-xl-1 col-xl-3 footer-sec">
+            <h3 class="Raleway-font pb-3">Links</h3>
+            <ul>
+              <li><a href="#go-top">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="menu-products.html">Menu</a></li>
+              <li><a href="menu-categories.html">Categories</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="offset-2 col-4 offset-lg-1 col-lg-2 offset-xl-1 col-xl-3 footer-sec">
+            <h3 class="Raleway-font pb-3">Company</h3>
+            <ul>
+              <li><a href="">Terms of Service</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container-fluid text-center py-3 py-lg-5">Copyright @2024 Lorem Restaurant</div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // إظهار نافذة التنبيه المخصصة والخلفية المظللة
+        var customAlert = document.getElementById('customAlert');
+        var overlay = document.getElementById('overlay');
+        customAlert.style.display = 'block';
+        overlay.style.display = 'block';
+
+        this.reset();
+
+        setTimeout(function () {
+          customAlert.style.display = 'none';
+          overlay.style.display = 'none';
+        }, 3000);
+      });
+
+      // إغلاق التنبيه عند النقر على زر الإغلاق
+      document.getElementById('closeAlert').addEventListener('click', function () {
+        document.getElementById('customAlert').style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+      });
+
+      gsap.from('.contact-form, .contact-info', {
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        duration: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: '.contact-section',
+          start: 'top 80%',
+        },
+      });
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from('.contact-section h1', {
+        scrollTrigger: {
+          trigger: '.contact-section h1',
+          start: 'top 80%',
+          toggleActions: 'play none none none',
+        },
+        opacity: 0,
+        y: 50,
+        duration: 1,
+      });
+
+      gsap.from('.container .h1', {
+        scrollTrigger: {
+          trigger: '.container .h1',
+          start: 'top 90%',
+          toggleActions: 'play none none none',
+        },
+        opacity: 0,
+        y: 30,
+        duration: 1.5,
+      });
+
+      gsap.from('.contact-form h3, .contact-info h3', {
+        scrollTrigger: {
+          trigger: '.contact-form h3, .contact-info h3',
+          start: 'top 90%',
+          toggleActions: 'play none none none',
+        },
+        opacity: 0,
+        y: 30,
+        duration: 1.5,
+        stagger: 0.3,
+      });
+
+      gsap.from('.map-container iframe, .map-container img', {
+        scrollTrigger: {
+          trigger: '.map-container',
+          start: 'top 75%',
+          toggleActions: 'play none none none',
+        },
+        opacity: 0,
+        scale: 0.9,
+        duration: 1,
+      });
+
+       /* Opening Animation */
+       document.addEventListener('DOMContentLoaded', (event) => {
+        const paths = document.querySelectorAll('#logo path');
+        const overlay = document.getElementById('opening-animation');
+        
+        paths.forEach((path, index) => {
+          const length = path.getTotalLength();
+          path.style.strokeDasharray = length;
+          path.style.strokeDashoffset = length;
+          
+          path.style.animation = `drawPath 2s ease forwards ${index * 0.3}s`;
+        });
+
+        // Hide overlay after animation
+        setTimeout(() => {
+          overlay.style.opacity = '0';
+          overlay.style.transition = 'opacity 1s ease';
+          setTimeout(() => {
+            overlay.style.display = 'none';
+          }, 1000);
+        }, 3500); // Adjusted timing for "Lorem"
+      }); 
+    </script>
+  </body>
+</html>

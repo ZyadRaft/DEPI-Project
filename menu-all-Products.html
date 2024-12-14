@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/restaurant_logo.png" type="image/x-icon">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <style>
+      .img-large {
+        width: 100%; /* Adjusts to full width of the column */
+        max-width: 400px; /* Maximum width for larger screens */
+        height: auto; /* Maintains aspect ratio */
+      }
+    
+      @media (max-width: 768px) {
+        .img-large {
+          max-width: 100%; /* Full width on smaller screens */
+        }
+      }
+    </style>
+    
+  </head>
+  <body id="go-top" class="homepage-body OpenSans-font">
+    <div class="fullscreen-overlay" id="opening-animation">
+      <svg id="logo" viewBox="0 0 500 100">
+        <!-- L -->
+        <path d="M10,10 L10,90 L50,90" />
+        <!-- O -->
+        <path d="M70,50 C70,25 90,10 110,10 C130,10 150,25 150,50 C150,75 130,90 110,90 C90,90 70,75 70,50 Z" />
+        <!-- R -->
+        <path d="M170,10 L170,90 M170,10 C195,10 220,25 220,45 C220,65 195,80 170,80 M220,80 L240,90" />
+        <!-- E -->
+        <path d="M260,10 L260,90 L300,90 M260,50 L290,50 M260,10 L300,10" />
+        <!-- M -->
+        <path d="M320,90 L320,10 L350,50 L380,10 L380,90" />
+        <!-- Decorative flourish -->
+        <path d="M400,80 Q410,70 420,80 T440,80" />
+      </svg>
+    </div>
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top Raleway-font">
+        <img src="assets/img/restaurant_logo.png" alt="" class="logo" />
+        <div class="toggle-nav-mob">
+          <i class="bi bi-list"></i>
+        </div>
+        <div class="container-fluid nav-mobile">
+          <div class="offset-md-5 col-md-7 col-12">
+            <ul class="navbar-nav justify-content-around">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                    MENU <span class="bi-caret-down-fill"></span>
+                  </a>
+                  <ul class="dropdown-menu justify-content-center">
+                    <li>
+                      <a class="dropdown-item" href="menu-products.html">All Products</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="menu-categories.html">Categories</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <button id="theme-toggle" class="d-block"></button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="product-details">
+      <div class="container">
+        <h2 class="mt-5">More Informations</h2>
+
+        
+<div class="row mb-4 align-items-center">
+  <div class="col-md-6">
+    <img src="assets/img/Koshari.png" alt="Koshari" class="img-fluid img-large" />
+  </div>
+  <div class="col-md-6">
+    <h3>Koshari</h3>
+    <p><strong>Type:</strong> Vegetarian</p>
+    <p><strong>Servings:</strong> 1</p>
+    <p><strong>Price:</strong> 50 EGP</p>
+    <p>A classic Egyptian dish made with rice, lentils, and pasta, topped with a spicy tomato sauce and crispy onions.</p>
+    <p><strong>Ingredients:</strong> Rice, lentils, macaroni, tomato sauce, garlic, onions, and spices.</p>
+    <a href="menu-products.html#koshari" class="btn btn-primary" id="button4">Back to Menu</a>
+  </div>
+</div>
+      </div>
+      <footer>
+        <div class="container-fluid">
+          <div class="row p-3 p-xl-4">
+            <div class="social-links">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-linkedin"></i>
+              <i class="bi bi-twitter-x"></i>
+              <i class="bi bi-youtube"></i>
+            </div>
+          </div>
+          <div class="row px-3">
+            <div class="col-12 col-lg-6 col-xl-4">
+              <h3 class="Raleway-font">Subscribe to our Newsletter</h3>
+              <form class="footer-form">
+                <div class="row">
+                  <div class="col-6 footer_first py-2">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter First Name"
+                      name="first-name"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="col-6 footer_last py-2">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter Last Name"
+                      name="last-name"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="col-12 footer_email my-3 py-2">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter Email"
+                      name="email"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="col-12 d-flex justify-content-center align-items-center">
+                    <button role="button" class="news_btn">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="offset-2 col-4 offset-lg-1 col-lg-2 offset-xl-1 col-xl-3 footer-sec">
+              <h3 class="Raleway-font pb-3">Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu-products.html">Menu</a></li>
+                <li><a href="menu-categories.html">Categories</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="offset-2 col-4 offset-lg-1 col-lg-2 offset-xl-1 col-xl-3 footer-sec">
+              <h3 class="Raleway-font pb-3">Company</h3>
+              <ul>
+                <li><a href="">Terms of Service</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container-fluid text-center py-3 py-lg-5">Copyright @2024 Lorem Restaurant</div>
+      </footer>
+
+
+  
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    
+    <script>
+       /* Opening Animation */
+       document.addEventListener('DOMContentLoaded', (event) => {
+        const paths = document.querySelectorAll('#logo path');
+        const overlay = document.getElementById('opening-animation');
+        
+        paths.forEach((path, index) => {
+          const length = path.getTotalLength();
+          path.style.strokeDasharray = length;
+          path.style.strokeDashoffset = length;
+          
+          path.style.animation = `drawPath 2s ease forwards ${index * 0.3}s`;
+        });
+
+        // Hide overlay after animation
+        setTimeout(() => {
+          overlay.style.opacity = '0';
+          overlay.style.transition = 'opacity 1s ease';
+          setTimeout(() => {
+            overlay.style.display = 'none';
+          }, 1000);
+        }, 3500); // Adjusted timing for "Lorem"
+      }); 
+    </script>
+  </body>
+</html>
